@@ -1,0 +1,175 @@
+
+
+.properties:hover{    
+    background: rgb(161, 160, 160);
+}
+.box-swap:hover .caption{
+    overflow:inherit;
+    min-width:100px;
+    width:auto;
+}
+.box-add{
+    margin-left:10px;
+    width: 125px;
+    height: 40px;
+}
+.color-box{
+ width:25px;
+ height:20px;
+ display: inline-block;
+}
+.active{
+    border:2px solid #585858;
+    box-shadow: 0 0 10px #ccc;
+}
+.caption{
+    text-align: center;
+    background:#666;
+    color:#221e1e;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+    width:100px;
+    height: 40px;
+    padding-top:7px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.properties{  
+    background: rgb(138, 135, 135);
+    width:25px;
+    height: 40px;
+    border:none!important;
+    border-top-left-radius:0!important;
+    border-bottom-left-radius:0!important;
+    border-top-right-radius:3px;
+    border-bottom-right-radius:3px;
+}
+.box-container {       
+    /* column-count: 8;   */
+  }
+  
+  .box-swap {       
+      margin-top:5px;
+      position: relative;
+      margin-left: 10px;     
+    min-width: 125px;
+    height: 40px;
+    border-top-right-radius:3px;
+    border-bottom-right-radius:3px;
+    padding:0px;
+    margin-bottom: 10px;
+  width: 100%;
+  float: left;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  }
+  .ui-widget-header .ui-button.btn-default,
+  .ui-widget-content .ui-button.btn-default,
+  .ui-widget.ui-button.btn-default,
+  .ui-button.btn-default,
+  .btn-default,
+  .ui-widget-content a.btn-default{
+   background:#666;
+   color:#f0f0f0;
+   border:1px solid transparent;
+  }
+  .ui-widget-header .ui-button.btn-default:focus,
+  .ui-widget-content .ui-button.btn-default:focus,
+  .ui-widget.ui-button.btn-default:focus,
+  .ui-button.btn-default:focus{
+   background:#666;
+   border:1px solid transparent;
+   box-shadow:none;
+  }
+  .ui-dialog{
+    padding:0!important;
+    background:#404040!important;
+       border:1px solid #585858!important;
+    border-radius:0!important;
+    z-index:1010!important; /*Заменить baseZIndex & autoZIndex в каждом .dialog-el*/
+    margin-left:auto;
+    margin-right:auto;
+    top:50%!important;
+    left:0!important;
+    right:0;
+    transform:translateY(-50%);
+   }
+   .ui-dialog.ui-widget .ui-dialog-content{
+    padding:0!important;
+   }
+   .ui-dialog.ui-widget .ui-dialog-titlebar{
+    padding:0 16px!important;
+    background:#333;
+    color:#d6d6d6;
+    height:28px;
+    line-height:28px;
+    font-size:12px;
+   }
+   .ui-dialog.ui-widget .ui-dialog-titlebar .ui-dialog-title{
+    font-size:12px!important;
+   }
+   .ui-dialog .ui-dialog-titlebar .fa-close{
+    width:18px;
+    height:18px;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:12px;
+    margin-top:auto;
+    margin-bottom:auto;
+   }
+   .ui-dialog .fa-close:before{
+    content:none!important;
+   }
+   .ui-dialog .ui-dialog-titlebar-close{
+    padding:0!important;
+    border:none!important;
+   }
+   .dialog-body{
+    padding:0 16px 24px;
+    color:#d6d6d6;
+   }
+   .dialog-item{
+    margin-top:16px;
+   }
+   .dialog-item__small-indent{
+    margin-top:8px;
+   }
+   .dialog-item__horizontally:not(:first-child){
+    margin-left:16px;
+   }
+   .dialog-item-label{
+    margin-bottom:8px;
+    color:#d6d6d6;
+    font-size:12px;
+   }
+   .dialog-item-value{
+    color:#f0f0f0;
+   }
+   .dialog-scroll__list{
+    height: 380px;
+    overflow: auto;
+   }
+   .dialog-scroll__list-row{
+    border-bottom: 1px solid #585858;
+    background:#4d4d4d;
+    padding:8px 16px;
+   }
+   .setting-dialog .ui-dialog{
+    left:-50%!important;
+   }
+   .setting-dialog .ui-datatable .ui-datatable-thead > tr > th,
+   .setting-dialog .ui-datatable .ui-datatable-tfoot > tr > td,
+   .setting-dialog .ui-datatable .ui-datatable-data > tr > td{
+    width:150px;
+   }
+  .ui-widget-header .ui-button.btn-default:enabled:hover,
+  .ui-widget-content .ui-button.btn-default:enabled:hover,
+  .ui-widget.ui-button:enabled.btn-default:hover,
+  .ui-button:enabled.btn-default:hover{
+   background:#7b7b7b;
+   border:1px solid transparent;
+  }

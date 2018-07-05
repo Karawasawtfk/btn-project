@@ -1,0 +1,33 @@
+<p-dialog appendTo="body" class="dialog-el" header="Свойства" [(visible)]="display" [modal]="true" [responsive]="true" [width]="350" [minWidth]="200" [minY]="70" 
+        [baseZIndex]="10000">
+        <div class="dialog-body">
+                <div class="dialog-item">
+                    <div class="color-box dialog-item__horizontally" *ngFor="let clr of colors" [ngClass]="{'active':clr.isActive}" (click)="colorChange(clr)" [style.background]="clr.color">                   
+                    </div>
+                </div> 
+            <div class="dialog-item">
+            <span class="ui-float-label">
+                <input class="input-el" id="float-input" type="text" size="30" [(ngModel)]="newDesc" pInputText> 
+                <label for="float-input">Описание</label>
+             </span>
+            </div>  
+                
+            <div class="dialog-item">
+                <button type="button" class="btn btn-default dialog-item__horizontally" pButton icon="pi pi-check" (click)="FalseYes()" label="Да"></button>
+                <button type="button" class="btn btn-default dialog-item__horizontally" pButton icon="pi pi-ban" (click)="display=false" label="Нет"></button>         
+                <button type="button" class="btn btn-default dialog-item__horizontally" pButton icon="pi pi-trash" (click)="BtDelete()" label="Удалить"></button>
+            </div> 
+        </div>
+</p-dialog>
+<button class="btn btn-default box-add" type="button" (click)="Arrpush()"  pButton icon="pi pi-plus-circle" label="Добавить"></button>
+<div [dragula]='"bag-one"' ngResizable class="box-container" [dragulaModel]='arrbtns'>       
+    <div class="box-swap flex-row" *ngFor="let btn of arrbtns" >
+        <div [style.background]="btn.color" class = "caption">{{btn.description}} </div>
+        <div class = "properties" (click)="showDialog(btn)" pButton icon="pi pi-pencil"></div>      
+    </div>
+</div>
+
+
+
+
+

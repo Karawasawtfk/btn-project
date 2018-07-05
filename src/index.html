@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MyApp</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+ <style>
+   .ui-button-text-icon-left .ui-button-text{
+     padding:0;
+   }
+   .flex-column{
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-orient:vertical;
+ -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+   flex-direction:column;
+}
+   .ui-dialog{
+ padding:0!important;
+ background:#404040!important;
+    border:1px solid #585858!important;
+ border-radius:0!important;
+ z-index:1010!important; /*Заменить baseZIndex & autoZIndex в каждом .dialog-el*/
+ margin-left:auto;
+ margin-right:auto;
+ top:50%!important;
+ left:0!important;
+ right:0;
+ transform:translateY(-50%);
+}
+.ui-dialog.ui-widget .ui-dialog-content{
+ padding:0!important;
+}
+.ui-dialog.ui-widget .ui-dialog-titlebar{
+ padding:0 16px!important;
+ background:#333;
+ color:#d6d6d6;
+ height:28px;
+ line-height:28px;
+ font-size:12px;
+}
+.ui-dialog.ui-widget .ui-dialog-titlebar .ui-dialog-title{
+ font-size:12px!important;
+}
+.ui-dialog .ui-dialog-titlebar .fa-close{
+ width:18px;
+ height:18px;
+ position:absolute;
+ top:0;
+ bottom:0;
+ right:12px;
+ margin-top:auto;
+ margin-bottom:auto;
+}
+.ui-dialog .fa-close:before{
+ content:none!important;
+}
+.ui-dialog .ui-dialog-titlebar-close{
+ padding:0!important;
+ border:none!important;
+}
+.ui-dialog-mask{
+ z-index:1009!important;
+}
+.input-el{
+    background:#333!important;
+    height:32px!important;
+    padding-left:8px!important;
+    padding-right:8px!important;
+    box-sizing:border-box!important;
+    color:#cecece!important;
+    border:1px solid #585858!important;
+}
+.ui-inputtext.ui-state-focus, .ui-inputtext:focus{
+  box-shadow: none!important;
+}
+.dialog-item__horizontally:not(:first-child){
+ margin-left:16px;
+}
+ *, *:focus, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: none;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  margin-top:auto;
+  margin-bottom:auto;
+    padding: .125em!important;
+    cursor: pointer!important;
+    border: 1px solid transparent!important;
+}
+.ui-dialog .ui-dialog-titlebar-icon:hover {
+    border-color: transparent!important;
+    background:transparent!important;
+    color: #212121;
+}
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-moz-placeholder,
+:-ms-input-placeholder{
+ color:#d6d6d6!important;
+}
+.ui-dialog .ui-dialog-titlebar .pi-times {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 12px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.pi-times:before{
+  content:none!important;
+}
+.ui-dialog .pi-times {
+  background:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="#8a8a8a" viewBox="0 0 24 24"><path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6z"/><path fill="none" d="M0 0h24v24H0z"/></svg>');
+    cursor: pointer;
+}
+.flex-row{
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-orient:horizontal;
+ -webkit-box-direction:normal;
+  -ms-flex-direction:row;
+   flex-direction:row;
+ -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+}
+.dialog-body{
+ padding:0 16px 24px;
+ color:#d6d6d6;
+}
+.dialog-item{
+ margin-top:16px;
+}
+.dialog-item__small-indent{
+ margin-top:8px;
+}
+.dialog-item__horizontally:not(:first-child){
+ margin-left:16px;
+}
+.dialog-item-label{
+ margin-bottom:8px;
+ color:#d6d6d6;
+ font-size:12px;
+}
+.dialog-item-value{
+ color:#f0f0f0;
+}
+.dialog-scroll__list{
+ height: 380px;
+ overflow: auto;
+}
+.dialog-scroll__list-row{
+ border-bottom: 1px solid #585858;
+ background:#4d4d4d;
+ padding:8px 16px;
+}
+.setting-dialog .ui-dialog{
+ left:-50%!important;
+}
+.setting-dialog .ui-datatable .ui-datatable-thead > tr > th,
+.setting-dialog .ui-datatable .ui-datatable-tfoot > tr > td,
+.setting-dialog .ui-datatable .ui-datatable-data > tr > td{
+ width:150px;
+}
+ </style>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
